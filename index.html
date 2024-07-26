@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition App - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="face-api.min.js"></script>
+    <script defer src="app.js"></script>
+    <script defer src="load-navbar.js"></script>
+    <style>
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-box {
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .feature-box img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .feature-box h3 {
+            font-size: 1.2rem;
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        .feature-box p {
+            font-size: 1rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="auth-container-placeholder"></div>
+
+    <!-- Main App UI -->
+    <div id="app-container">
+        <div class="navbar-container"></div>
+        
+
+        <div class="header">
+            <h1 class="fade-in">Discover Your Instagram Match Instantly</h1>
+            <p>Join InstaMatch Today</p>
+            <p>Add your face and Instagram username to our database.
+                <br>Connect with people who share your interests.</p>
+            <button type="button">Learn More</button>
+        </div>
+
+        <div class="body">
+            <h2 class="fade-in">Why choose InstaMatch?</h2>
+            <h2>Fast, Accurate, and Fun</h2>
+            <p>InstaMatch offers a quick and reliable way to find Instagram users by comparing faces.<br> Our advanced algorithms ensure accurate matches.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-box">
+                <img src="facial-recognition.png" alt="Face Recognition Icon">
+                <h3>Advanced Face Recognition</h3>
+                <p>Our cutting-edge technology ensures precise matches.</p>
+            </div>
+            <div class="feature-box">
+                <img src="user-friendly.png" alt="User Friendly Icon">
+                <h3>User-Friendly Interface</h3>
+                <p>Easily upload images and find matches with a few clicks.</p>
+            </div>
+            <div class="feature-box">
+                <img src="shield.png" alt="Secure Database Icon">
+                <h3>Highly-Secured Database</h3>
+                <p>Your data is safe with us. We prioritize user privacy and security.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Insta Ai. All rights reserved. | <a href="https://www.instagram.com">Follow us on Instagram</a></p>
+        </div>
+    </div>
+</body>
+</html>

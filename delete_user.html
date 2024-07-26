@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition App - Delete User</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include face-api.js library -->
+    <script defer src="face-api.min.js"></script>
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <!-- Your main application script -->
+    <script defer src="app.js"></script>
+    <script defer src="load-navbar.js"></script>
+</head>
+<body>
+    
+    <!-- Authentication UI -->
+    <div id="auth-container-placeholder"></div>
+
+    <div id="app-container">
+        <div class="navbar-container"></div>
+    
+    <div class="container">
+        <form class="form">
+            <div class="title">Delete Person,<br><span>provide details below</span></div>
+            <input type="text" placeholder="Instagram Handle" name="instaHandle" class="input" id="deleteInstaHandle">
+            <button type="button" class="button-confirm delete" id="deletePerson">Delete Person</button>
+        </form>
+    </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Insta Ai. All rights reserved. | <a href="https://www.instagram.com">Follow us on Instagram</a></p>
+    </div>
+</body>
+</html>

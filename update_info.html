@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition App - Update User Info</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="face-api.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script defer src="app.js"></script>
+    <script defer src="load-navbar.js"></script>
+</head>
+<body>
+
+    <!-- Authentication UI -->
+    <div id="auth-container-placeholder"></div>
+
+    <div id="app-container">
+        <div class="navbar-container"></div>
+
+        <div class="container">
+            <form class="form">
+                <div class="title">Update Person Info,<br><span>enter the current and new details below</span></div>
+                <input type="text" placeholder="Current Instagram Handle" id="currentInstaHandle" class="input" required>
+                <input type="text" placeholder="New Name" id="newName" class="input" required>
+                <input type="file" multiple accept="image/*" id="newImagePath" class="input">
+                <input type="text" placeholder="New Instagram Handle" id="newInstaHandle" class="input" required>
+                <button type="button" id="updateInfo" class="button-confirm">Update Info</button> <!-- Corrected ID here -->
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Insta Ai. All rights reserved. | <a href="https://www.instagram.com">Follow us on Instagram</a></p>
+    </div>
+</body>
+</html>
